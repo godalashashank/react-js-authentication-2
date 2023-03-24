@@ -90,7 +90,7 @@ class LoginForm extends Component {
 
   render() {
     const {showSubmitError, errorMsg} = this.state
-    jwtToken = Cookies.get('jwt_token')
+    const jwtToken = Cookies.get('jwt_token')
 
     if (jwtToken !== undefined) {
       return <Redirect to="/" />
